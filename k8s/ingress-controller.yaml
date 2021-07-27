@@ -1,9 +1,10 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-svc
+  name: ingress-local-video-player
   annotations:
     kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: public
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:
