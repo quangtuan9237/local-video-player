@@ -1,0 +1,86 @@
+body {
+  background-color: #282c34;
+  color: pink;
+  font-weight: bolder;
+}
+
+.video-player {
+  margin: auto;
+  width: 70vw;
+}
+
+.plyr__caption {
+  font-size: 2.3em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Video selector css */
+.video-file-input {
+  color: transparent;
+}
+.video-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.video-file-input::before {
+  content: 'Select video';
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  margin: 3rem;
+}
+.video-file-input:hover::before {
+  border-color: black;
+}
+.video-file-input:active {
+  outline: 0;
+}
+.video-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+/* Subtitle selector css */
+.subtitle-file-input {
+  color: transparent;
+}
+.subtitle-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.subtitle-file-input::before {
+  content: 'Add subtitle';
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  margin: 3rem;
+}
+.subtitle-file-input:hover::before {
+  border-color: black;
+}
+.subtitle-file-input:active {
+  outline: 0;
+}
+.subtitle-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
