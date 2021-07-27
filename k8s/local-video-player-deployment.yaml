@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: local-video-player-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: local-video-player
+  template:
+    metadata:
+      labels:
+        app: local-video-player
+    spec:
+      containers:
+        - name: local-video-player
+          image: quangtuan9237/local-video-player
