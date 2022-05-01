@@ -38,6 +38,8 @@ function App() {
   };
 
   function handleVideoChange(event: any) {
+    console.log("BIBAM", event)
+    console.log("BIBAM", URL.createObjectURL(event.target.files[0]))
     setVideoUrl(URL.createObjectURL(event.target.files[0]));
   }
 
@@ -54,6 +56,8 @@ function App() {
         console.error(err);
       });
   }
+
+  console.log("videoUrl", videoUrl);
 
   return (
     <div>
